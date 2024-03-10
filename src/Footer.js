@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 // Define the links for the social media profiles
 const socialLinks = [
   { name: 'Discord', url: 'https://discord.gg/AB9VKpR8PZ' },
-  { name: 'YouTube', url: 'https://openai.com/' },
+  { name: 'YouTube', url: 'https://youtube.com/@ProjectHit-mx4pq?si=RnXa3Dxc6970Y3x3' },
   { name: 'Telegram', url: 'https://t.me/+RpNznNcnKLI3YjY1' },
   { name: 'LinkedIn', url: '/linkedin' }
   // You can replace the hrefs with the actual URLs to the social media profiles
