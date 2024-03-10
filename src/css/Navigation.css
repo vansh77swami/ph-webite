@@ -1,0 +1,259 @@
+/* navigation.css */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 1rem; /* top right bottom left */
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-menu {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* This should align the nav items to the left */
+  gap: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+  margin-top: -1rem;
+  padding-left: 10rem;
+}
+
+nav a {
+  text-decoration: none;
+  /* color: white; */
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.25rem 0;
+  border-radius: 0.125rem;
+  letter-spacing: 0.02em;
+  position: relative;
+  display: inline-block;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  /* text-decoration-color: white; or currentColor for the same color as the text */
+  text-decoration-thickness: 1px; /* or any other thickness you prefer */
+  text-underline-offset: 5.7px; /* increase the gap as you like */
+
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  margin-top: -16px;
+  margin-left: 90px;
+  transform: scale(0.9);
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: -17px;
+  line-height: 1;
+  position: relative;
+  top: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.04em;
+  font-family: 'Roboto', sans-serif;
+  /* color: white; */
+}
+
+.brand-name-large {
+  font-size: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  margin-left: 10px;
+  position: relative;
+  bottom: 8px;
+  letter-spacing: 0.08em;
+  font-family: 'Roboto Slab', serif;
+  /* color: white; */
+}
+
+.app-icon {
+  height: 50px;
+  width: auto;
+}
+
+/* Styles for the Try ChatGPT button */
+.nav-button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Center the text and icon */
+  padding: 0.5rem 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1.4px solid #fff;
+  font-size: 1rem;
+  line-height: 130%;
+  border-radius: 0.2em;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: transparent; /* Background is transparent by default */
+  text-decoration: none; /* Enforce no underline */
+  font-weight: 500; /* Match the font-weight to other nav items */
+  
+}
+
+/* Add a container for the right-side button */
+.nav-button-container {
+  margin-left: auto; /* Pushes the container to the right */
+  align-items: center;
+  margin-top: -1rem;
+  margin-right: 7rem; /* Adjust this value to move the button to the left */
+}
+
+/* Adjusted hover and focus state for the button */
+.nav-button-link:hover,
+.nav-button-link:focus {
+  text-decoration: none; /* Removes any text underline */
+}
+
+/* Icon in the Try ChatGPT button has no left margin and is white by default */
+.nav-icon {
+  margin-left: 0.2rem;
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.5rem; /* Add a right margin for the icon */
+
+}
+
+/* Style for wrapping the brand link */
+.brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Ensures the link has no underline */
+  color: inherit; /* Inherits color for brand name from parent */
+  text-decoration: none;
+}
+
+/* Remove the underline on hover and focus for the brand link */
+.brand-link:hover,
+.brand-link:focus {
+  text-decoration: none;  /* Ensures no underline appears on hover/focus */
+}
+
+.menu-button {
+  display: none; /* Hide the button on large screens */
+  background: none;
+  border: none;
+  color: inherit; /* Inherit text color from the parent */
+  font: inherit; /* Inherit font from the parent */
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 1rem;
+}
+
+.nav-button-container-mobile {
+  display: none; /* Hide this by default */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* This ensures padding does not affect the total width or height */
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjusted for mobile view */
+  .menu-button {
+    display: block; /* Show the button on small screens */
+    position: absolute; /* Adjust as needed */
+    top: 13px;
+    right: -9px;
+    font-size: 1rem;
+  }
+
+  .nav-menu {
+    display: none;
+    position: fixed;
+    top: 4rem; /* Positioned right below the reduced-height navbar */
+    height: 40vh; /* Set the nav-menu height to 50% of the viewport height */
+    width: 100%;
+    overflow-y: auto;
+    z-index: 99999;
+    padding: 1rem;
+    left: 0; /* Align to the left edge of the viewport */
+    right: 0; /* Align to the right edge of the viewport */
+    margin: 0; /* Reset any margin */
+    box-sizing: border-box; /* This will include padding in the width calculation */
+
+  }
+
+  .nav-menu.open {
+    display: flex; /* Use flex layout for open menu */
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align children to the start (left) */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack the list items vertically */
+    margin-top: 2rem;
+    gap: 0.5rem;
+    padding-left: 0;
+    margin-left: 0.5rem;
+    
+  }
+
+  nav ul li a {
+    /* Decrease the font size of the navigation links */
+    font-size: 1rem; /* Adjust the font size as needed */
+  }
+
+  .nav-button-container {
+    display: none; /* Hide the button container on small screens */
+  }
+
+  .nav-button-container-mobile {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */    /* Additional mobile styles for the button container */
+    padding: 1rem; /* Add some padding (if needed) */
+    border-bottom: 1px solid #eee; /* Optional: adds a separator line (if needed) */
+    justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+      transform: scale(0.9);
+      width: calc(100% - 2rem); /* Adjust width considering padding (if any) */
+
+  }
+
+  .header-nav {
+    height: 4rem; /* Smaller height for the navigation bar on mobile screens */
+    padding: 0 1rem; /* Adjust padding as necessary */
+  }
+
+  .brand-container {
+    margin-top: 0;
+    margin-left: -25px;
+    transform: scale(0.75); /* Scale down the brand-container for mobile screens */
+  }
+
+  .brand-link {
+    flex-grow: 1; /* Allow the brand to grow to use available space */
+  }
+
+
+
+}

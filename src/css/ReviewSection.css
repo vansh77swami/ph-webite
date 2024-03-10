@@ -1,0 +1,295 @@
+/* ReviewSection.css */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&display=swap');
+
+.review-section {
+  background-color: #000000;
+  color: white;
+  padding-bottom: 6rem;
+}
+
+
+.review-heading {
+  font-family: 'Merriweather', serif;
+  font-size: 2.50rem;
+  font-weight: 300;
+  line-height: 110%;
+  letter-spacing: -.01em;
+  font-feature-settings: "liga";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 8.5rem;
+}
+
+.review-header-container {
+  display: block;
+  width: 100%;
+  padding-right: 8.5rem;
+}
+
+.review-description {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  text-align: right;
+  margin-top: -4rem;
+  margin-right: 2rem;
+}
+
+.review-description.second-line {
+  text-align: center;
+  margin-top: 0;
+  margin-left: 41.3rem;
+}
+
+.review-explore-button-wrapper {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.review-explore-link {
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+  margin-top: 0.5rem;
+  text-underline-offset: 4px;
+  margin-left: 19.2rem;
+}
+
+.review-explore-link:hover,
+.review-explore-link:focus {
+  text-decoration-color: #333333;
+}
+
+.review-card {
+    /* Keep a fixed width for the review cards */
+    width: 380px;
+    /* Rest of the styles */
+    height: 380px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-right: 2rem;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; /* Space items out between top and bottom of the flex container */
+    padding: 1rem;
+}
+  
+
+/* Ensure the cards won't wrap onto multiple lines */
+.review-cards-container .review-card {
+    flex-shrink: 0; /* Prevent the card from shrinking */
+    margin-right: 1.5rem; /* Spacing between cards */
+  }
+
+  .review-cards-wrapper {
+    overflow-x: hidden;
+    margin-left: 8.5rem;  /* Adjust if necessary */
+
+    border-radius: 10px;  /* Match this to the border-radius of review cards */
+    margin-top: 6rem; /* Space above the cards container */
+
+  }
+  
+  .review-cards-container {
+    display: flex;
+    align-items: center;
+    gap: 0rem; /* Space between each card */
+    width: max-content; /* Allows the container to grow as wide as it needs to with the cards */
+    white-space: nowrap; /* Prevent wrapping of inline elements including text */
+    animation: move 200s ease-in-out infinite; /* Updates to the new animation values */
+}
+
+/* Animation keyframes for the smooth leftward scroll */
+@keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% / 2)); /* Loops for half the cards for seamless animation */
+    }
+  }
+
+  /* Pause the animation on hover or focus */
+.review-cards-container:hover,
+.review-cards-container:focus-within {
+  animation-play-state: paused; /* Works for both hover and focus on child elements */
+}
+
+.review-text-container {
+    flex-grow: 1; /* Allow the text container to expand and use available space */
+    /* Allow text to wrap */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* Remove white-space: pre-wrap in case it causes issues with centring */
+  }
+
+
+.review-card-text {
+    font-size: 1.2rem;
+    text-align: left; /* Align the text to the left */
+    margin: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap; /* Keep this property if it solved the wrapping issue */
+    padding: 0 1rem; /* Padding inside the text container */
+}
+
+.quote-icon {
+    width: 50px; /* Adjust size if necessary */
+    margin: 1rem; /* Add margin for spacing */
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  
+
+  
+  .reviewer-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust if you want the name and image to be on the far sides */
+    padding: 1rem; /* Padding inside the reviewer details container */
+    margin-top: auto; /* Push the reviewer details to the bottom */
+  }
+  
+  .reviewer-image {
+    width: 70px; /* Adjust size if necessary */
+    height: 70px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    margin-left: 1rem;
+
+    order: 1; /* Order used in flexbox to position image after the name */
+  }
+  
+  .reviewer-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 1rem;
+
+    order: 2; /* Order used in flexbox to position name before the image */
+  }
+  
+  /* Add responsive styles for screens that are 768px wide or less */
+@media screen and (max-width: 768px) {
+  .review-section {
+    padding-bottom: 3rem;
+  }
+  
+  .review-heading {
+    font-size: 1.75rem; /* Slightly smaller font size for smaller screens */
+    /* margin-left: 2rem; Adjust the side margin to align with the section's padding */
+    text-align: left; /* Center-align the heading for a balanced look */
+    margin-left: 0rem;
+    padding-left: 1rem;
+  }
+
+  .review-header-container {
+    padding-right: 1rem; /* Mirror the new margin of product-heading */
+    padding-left: 0rem;
+    align-self: left;
+  }
+
+  .review-description {
+    font-size: 1.3125rem; /* Reduced font size for a cleaner look on smaller screens */
+    margin-top: 0.5rem; /* Adjust top margin to reduce space between heading and description */
+    line-height: 130%;
+    text-align: left; /* Center-align the description for consistency with heading */
+    margin-left: 1rem;
+    padding-right: 0rem;
+    letter-spacing: -.01em;
+  }
+
+  .review-explore-button-wrapper {
+    width: 100%; /* Make wrapper full width */
+    text-align: left; /* Align content to the left */
+    padding-top: 1rem;
+    padding-left: 1rem; /* If you want to add some space from the left edge */
+  }
+
+  .review-explore-link {
+    margin-left: 0;
+    font-size: 1rem; /* Optionally reduce font size of the button */
+    padding-left: 0rem;
+  }
+
+  .review-card {
+    width: 280px; /* Set a fixed width */
+    height: 300px; /* And a minimum height or fixed height if you prefer */
+  }
+
+  .review-cards-wrapper {
+    margin-left: 1rem; /* Adjust left margin */
+
+    margin-top: 3rem; /* Adjust space above the cards container */
+  }
+
+  .review-cards-container {
+    justify-content: center; /* Center the cards in the container */
+    animation: move-sm 200s linear infinite;
+    margin-right: 0rem;
+    padding-right: 0rem;
+    margin-top: 0rem;
+  }
+
+  /* Animation keyframes for the smooth leftward scroll on small screens */
+@keyframes move-sm {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Assuming you want to loop through all cards, replace `20` with the actual number of review cards */
+    transform: translateX(calc(-280px * 20)); 
+  }
+}
+
+
+  /* You may choose to not have the scrolling feature on smaller screens */
+  /* as it could be less user-friendly on a touch interface */
+  .review-cards-container .review-card {
+    flex-shrink: 0;
+  }
+
+  .review-text-container {
+    padding-left: 0rem; /* Adjust padding inside the text container */
+    padding-right: 0rem;
+  }
+
+  .review-card-text {
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .quote-icon {
+    width: 35px; /* Adjust icon size */
+    margin-left: 1rem; 
+    margin-top: 1.6rem; 
+}
+
+  .reviewer-details {
+    padding-left: 0rem; /* Adjust details container padding */
+  }
+
+  .reviewer-image {
+    width: 50px; /* Fixed width for images */
+  height: 50px; /* Fixed height for images */
+  border-radius: 50%; /* Make it round */
+  object-fit: cover; /* This ensures the image scales correctly within the dimensions */
+  } 
+
+  .reviewer-name {
+    font-size: 1rem; /* Adjust font size */
+  }
+  
+  .review-card-text {
+    margin: 0rem;
+    margin-top: 1rem;
+    text-align: left;
+  }
+
+}
+

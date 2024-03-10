@@ -1,0 +1,302 @@
+.new-paragraph-container {
+    width: 470px;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 2.5rem;  /* Adjust to match the design */
+    flex-grow: 0;     /* Do not allow this container to grow */
+  }
+
+.new-paragraph {
+    text-align: left;
+    font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.text-item.active {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 1px;
+    text-decoration-style: solid;
+    text-underline-offset: 0.75rem;
+}
+
+.try-now-container {
+    margin-top: 1rem;
+    text-align: left;
+}
+  
+
+.try-now-container-gpt {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.try-now-button {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-style: solid;
+    text-decoration-color: black;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+    font-weight: 500;
+    text-underline-offset: 0.35rem;
+    font-size: 1.1rem;
+    line-height: 130%;
+}
+
+.try-now-button:hover {
+    text-decoration-color: #a5a5a5;
+}
+
+.try-now-icon {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0.05em;
+}
+
+.content-gif-horizontal-layout {
+    display: flex;
+    align-items: flex-start;  /* Align items to the start */
+    justify-content: space-between;
+    width: auto;
+  }
+  
+  .gif-container {
+    flex-shrink: 0; /* Prevent GIF from shrinking */
+    width: 40%; /* Example: allocate 30% of the space to the GIF */
+    display: flex;
+    align-items: center; /* Center the GIF vertically */
+    margin-top: 2.5rem;
+    margin-left: 40rem;
+
+  }
+  
+.free-access-gif {
+    max-width: 100%; /* Use max-width to constrain the GIF within its container */
+    max-height: 100%; /* Set max height */
+    object-fit: contain; /* Use object-fit to ensure the GIF retains its aspect ratio */
+}
+
+.content-specific-gif {
+    max-width: 100%; /* Use max-width to constrain the GIF within its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .text-content-container {
+    border: 1px solid #a5a5a5;
+    padding: 1rem;
+    /* padding-right: 0rem; */
+    /* max-width: 770px; */
+    box-sizing: border-box;
+    flex-grow: 0;         /* Do not allow this container to grow */
+    margin-top: 2.5rem;
+    margin-left: 21rem;
+    width: 800px;
+
+  }
+  
+  .input-container {
+    margin-bottom: 1rem; /* Space below input section */
+
+  }
+/* Styles for the new Input and Output sections */
+
+/* Add margins to the input and output containers */
+.output-container {
+  margin-bottom: 1rem; /* Spacing after each section */
+}
+
+/* Add margins to input and output texts if needed */
+.input-text {
+    color: #747474;
+    margin-top: 0; /* Assuming we don't want additional top margin */
+    font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-right: -1rem; /* Counteract parent padding */
+    line-height: 130%;
+    letter-spacing: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.output-text {
+    color: black;
+    margin-top: 0; /* Assuming we don't want additional top margin */
+    font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-right: -1rem; /* Counteract parent padding */
+    line-height: 130%;
+    letter-spacing: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5; /* Increase the line-height to create visible gaps */
+
+}
+
+    .input-heading {
+      color: #747474; /* Set text color for the headings */
+      font-size: 1rem; /* Set font size as desired */
+      font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 130%;
+      letter-spacing: 0;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;    
+    margin-bottom: 1rem;
+    }
+
+    .output-heading {
+        font-size: 1rem; /* Set font size as desired */
+        font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;    
+      margin-bottom: 1rem;
+    }
+    /* Remove horizontal margins on the dividing line if not desired */
+    .divide-line {
+      height: 1px;
+      background-color: #CCCCCC;
+      margin: 1rem 0; /* Maintain top & bottom margin but remove left & right margin */
+      margin-left: -1rem; /* Counteract parent padding */
+      margin-right: -1rem; /* Counteract parent padding */
+    }
+    
+    @keyframes cursorBlink {
+        from { opacity: 1; }
+        to { opacity: 0; }
+      }
+      
+      .blink-cursor {
+        position: relative;
+        display: inline-block;
+        width: 0.7rem;
+        height: 1.45em;
+        background-color: currentColor;
+        margin-left: -11px;
+        box-sizing: border-box;
+        opacity: 1; /* Initial solid cursor without blinking */
+        animation: none; /* No blinking until typing is complete */   
+          vertical-align: bottom; /* Align the bottom of the cursor to the bottom of the text */
+
+     }
+
+    .blink-cursor.is-complete {
+        animation: cursorBlink 0.6s ease-in-out infinite alternate;
+    }
+      
+    .typing-text {
+        background-color: #cccccc; /* Light grey background for the "highlight" */
+        display: inline;
+        padding: 0 4px; /* Apply padding to the sides only */
+        line-height: 130%; /* Adjust line height to match your design's needs */
+        padding-bottom: 0.1rem; /* Vertical padding also contributes to height */
+        padding-right: 0.75rem;
+        padding-left: 0rem;
+    }
+  
+    .active-input-img {
+      max-width: 100%; /* This will ensure the image does not exceed the parent container's width */
+      width: 100%; /* This will make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+      margin-top: 0.7rem; /* Adjust as necessary */
+      margin-bottom: 1rem; /* Adjust as necessary */
+    }
+    
+    .active-output-img {
+      max-width: 100%; /* This will ensure the image does not exceed the parent container's width */
+      width: 100%; /* This will make the image responsive */
+      height: 10%; /* Maintain aspect ratio */
+      margin-top: 0.7rem; /* Adjust as necessary */
+      margin-bottom: 1rem; /* Adjust as necessary */
+    }
+    
+    @media (max-width: 768px) {
+      /* Adjust the layout to stack elements vertically */
+      .content-gif-horizontal-layout {
+        flex-direction: column;
+      }
+    
+      /* Adjust the margins and width of the GIF container for smaller screens */
+      .gif-container {
+        width: 100%; /* Full width for smaller screens */
+        margin-left: 10rem;
+        margin-top: 1.5rem; /* Adjust the top margin as needed */
+      }
+    
+      /* Adjust the text content container for smaller screens */
+      .text-content-container {
+        /* margin-left: 1rem; or 0, depending on your design */
+        margin-right: 1rem; /* or 0, depending on your design */
+        /* padding-left: 0rem;    */
+        width: 100%; /* This will set the width to be responsive */
+        margin-left: 0rem;
+
+    }
+    
+      /* Adjust the new-paragraph-container for smaller screens */
+      .new-paragraph-container {
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 1.5rem; /* Adjust the top margin */
+      }
+
+      .new-paragraph {
+        font-size: 1rem;
+        line-height: 130%;
+        letter-spacing: 0;
+      }
+    
+      /* Adjust styling for headings and text within input and output containers */
+      .input-heading,
+      .output-heading,
+      .input-text,
+      .output-text {
+        font-size: 1rem; /* Slightly decrease the font size */
+        margin-right: 0; /* Reset negative margins if any */
+
+      }
+    
+      /* Adjust the button size and spacing for smaller screens */
+      .try-now-button,
+      .try-now-container-gpt {
+        font-size: 1rem;
+        line-height: 130%;
+        letter-spacing: 0;      }
+    
+      /* Adjust margins for the dividing line */
+      .divide-line {
+        margin-left: 0; /* Reset left margin */
+        margin-right: 0; /* Reset right margin */
+        margin-top: 0.5rem; /* Adjust top and bottom margin */
+        margin-bottom: 0.5rem;
+      }
+    
+      /* Adjust the cursor blink to fit within smaller text */
+      .blink-cursor {
+        height: 1.2em; /* Adjust height of the cursor */
+      }
+      
+      .active-output-img {
+        /* max-width: 100%; This will ensure the image does not exceed the parent container's width */
+        width: 10%; /* This will make the image responsive */
+        height: 10%; /* Maintain aspect ratio */
+        margin-top: 0.7rem; /* Adjust as necessary */
+        margin-bottom: 1rem; /* Adjust as necessary */
+      }
+    
+    }
+    

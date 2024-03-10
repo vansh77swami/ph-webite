@@ -1,0 +1,246 @@
+/* ProductSection.css */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&display=swap');
+
+.product-section {
+  background-color: #000000;
+  color: white;
+  padding-bottom: 6rem; /* Increase bottom padding as needed */
+}
+
+.section-top-border {
+  height: 1px;
+  background-color: #ffffff;
+  width: calc(100% - 17.3rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-heading {
+  font-family: 'Merriweather', serif;
+  font-size: 2.50rem;
+  font-weight: 300;
+  line-height: 110%;
+  letter-spacing: -.01em;
+  font-feature-settings: "liga";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 8.5rem;
+}
+
+.product-header-container {
+    display: block; /* Using block layout */
+    width: 100%; /* Full width to utilize the entire section */
+    padding-right: 8.5rem;  /* Same as the left padding for .product-heading to ensure alignment */
+  }
+  
+  .product-description {
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    text-align: left;
+    margin-top: -4rem;
+    margin-right: 1rem;
+    margin-left: 60rem;
+
+    /* Include any shared styles for both paragraphs here */
+  }
+  
+  .product-description.second-line {
+    text-align: center; /* Aligns the second line text to the left */
+    margin-top: 0; /* Reset the top margin for standard paragraph spacing */
+    margin-left: 29.6rem;
+  }
+
+/* Wrapper for the explore button to align it to the right */
+.product-explore-button-wrapper {
+    text-align: center; /* Aligns the button to the right side */
+    padding-top: 1rem; /* Adds some space above the button */
+  }
+  
+  .product-explore-link {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white; /* Since 'inherit' will take the parent color, which is white */
+    margin-top: 0.5rem;
+    text-underline-offset: 4px;
+    margin-left: 21rem;
+    /* ...other styles remain the same */
+  }
+  
+  .product-explore-link:hover,
+  .product-explore-link:focus {
+    text-decoration-color: #333333;
+  }
+
+  /* Styles for the product card */
+.product-card {
+    width: 380px; /* Fixed width or any desired value */
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Inherits text color from the parent */
+    margin-top: 2rem; /* Spacing above the card */
+    display: flex; /* Aligns image and info side by side */
+    flex-direction: column; /* Stacks items vertically */
+    padding: 0; /* Remove padding to have the image cover the full area of the card */
+    position: relative; /* Needed for absolute positioning of children */
+    overflow: hidden; /* Ensures no content spills outside the border-radius */
+
+  }
+  
+  .product-cards-container .product-card:first-child {
+    margin-left: 8.5rem; /* Specific left margin for the first card */
+  }
+
+  .product-image-wrapper {
+    height: 380px; /* Set a fixed height for the image wrapper */
+    width: 100%;
+    overflow: hidden; /* Hide overflow to respect border-radius */
+    display: block; /* Ensures this wrapper is a block-level element */
+
+  }
+
+  /* productsection.css */
+.product-image {
+  width: 100%;
+  height: 380px; /* Set a fixed height, identical to .product-image-wrapper's height */
+  background-size: cover;
+  background-position: center;
+}
+
+  
+  /* Adjust the container for the product information */
+  .product-info {
+    /* No absolute positioning here */
+    padding: 0.7rem; /* Padding inside the info container */
+padding-left: 0rem;
+  }
+  
+  .product-name-text {
+    display: inline; /* Will only take up as much width as the text */
+    font-weight: 500;
+    text-decoration: none; /* Ensures no decoration is present initially */
+  }
+  
+  .product-card:hover .product-name-text,
+  .product-card:focus .product-name-text {
+      text-decoration: underline solid white; /* Solid underline on hover/focus */
+      text-decoration-thickness: 1px; /* Control the thickness of the underline */
+      text-underline-offset: 0.6px; /* Align the underline right below the text */
+  }
+
+  /* Styles for product name and launch date */
+  .product-name {
+    
+    color: white;
+    text-align: left;
+    margin: 0; /* Remove margins to keep the text close together */
+  }
+  
+  .launch-date {
+    color: white;
+    text-align: left;
+    margin-top: 0.3rem; /* Remove margins to keep the text close together */
+  }
+
+  .product-cards-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: flex-start; /* Align items to the start of the container */
+    gap: 1.5rem; /* Space between each card */
+    margin-top: 4rem; /* Space above the cards container */
+  }
+  
+  /* Add responsive styles inside a media query for screens with max-width of 768px */
+@media (max-width: 768px) {
+
+  .product-section {
+    padding-bottom: 3rem; /* Optionally reduce the padding for smaller screens */
+  }
+
+  .section-top-border {
+    width: calc(100% - 2rem); /* Subtracting 1rem margins from both sides */
+    margin-left: 1rem; /* 1rem margin on the left */
+    margin-right: 1rem; /* 1rem margin on the right */
+    height: 2px;
+  }
+  
+  /* Adjusting the product heading for smaller screens */
+  .product-heading {
+    font-size: 1.75rem; /* Slightly smaller font size for smaller screens */
+    /* margin-left: 2rem; Adjust the side margin to align with the section's padding */
+    text-align: left; /* Center-align the heading for a balanced look */
+    margin-left: 0rem;
+    padding-left: 1rem;
+  }
+
+  .product-description {
+    font-size: 1.3125rem; /* Reduced font size for a cleaner look on smaller screens */
+    margin-top: 0.5rem; /* Adjust top margin to reduce space between heading and description */
+    line-height: 130%;
+    text-align: left; /* Center-align the description for consistency with heading */
+    margin-left: 1rem;
+    padding-right: 0rem;
+    letter-spacing: -.01em;
+  }
+  
+  .launch-date {
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: 0;
+  }
+
+
+  .product-header-container {
+    padding-right: 1rem; /* Mirror the new margin of product-heading */
+    padding-left: 0rem;
+    align-self: left;
+  }
+
+  .product-explore-button-wrapper {
+    width: 100%; /* Make wrapper full width */
+    text-align: left; /* Align content to the left */
+    padding-top: 1rem;
+    padding-left: 1rem; /* If you want to add some space from the left edge */
+  }
+  
+
+  .product-explore-link {
+    margin-left: 0;
+    font-size: 1rem; /* Optionally reduce font size of the button */
+    padding-left: 0rem;
+  }
+
+  /* Adjust the flex container for product cards */
+  .product-cards-container {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: left; /* Center the cards */
+    margin-top: 2rem; /* Reduce the margin-top */
+    gap: 1rem; /* Optional: Reduce gap for a tighter layout */
+    padding-left: 1rem; /* If you want to add some space from the left edge */
+
+  }
+  
+  .product-name {
+    font-size: 1rem;
+
+  }
+
+  /* Styles for each product card */
+  .product-card {
+    /* width: 90%; Make card width responsive to screen size */
+    margin-top: 1rem; /* Adjust margins as needed */
+    margin-right: 0rem;
+    padding-right: 0rem;
+  }
+
+  .product-cards-container .product-card:first-child {
+    margin-left: 0; /* Remove specific margin for the first card */
+  }
+
+
+  .product-info {
+padding-top: 0.8rem;  
+}
+
+}

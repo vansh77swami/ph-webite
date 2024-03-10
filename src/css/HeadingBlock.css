@@ -1,0 +1,58 @@
+/* HeadingBlock.css */
+.heading-block {
+    max-width: 350px; /* Just an example; reduce this value until the text wraps as desired */
+    box-sizing: border-box;
+    padding: 0 15px; /* Adjust the padding as necessary */
+    margin-right: 9rem; /* Add right margin to each block except the last one */
+    cursor: pointer; /* Changes cursor to a hand icon when hovering over the block */
+
+  }
+  
+  .heading-block h3 {
+    /* Style your h3 as you like here */
+    margin-top: 0; /* Set to 0 or any value less than the current margin */
+
+    margin: 0;
+    font-weight: 600; /* Example */
+    font-size: 1.7rem; /* Example */
+  }
+  
+  /* Target the first .heading-block */
+.headings-container .heading-block:nth-of-type(1) {
+    max-width: 420px; /* Adjust the value as needed to allow the text to wrap */
+  }
+  
+  /* Target the third .heading-block */
+  .headings-container .heading-block:nth-of-type(3) {
+    max-width: 470px; /* Adjust the value as needed to allow the text to wrap */
+  }
+  
+  /* HeadingBlock.css */
+.heading-link {
+    display: inline-block; /* Allows the underline to match the text length */
+    text-decoration: underline; /* Creates the underline */
+    text-decoration-color: white; /* Replace #somecolor with the color you want */
+    color: inherit; /* Inherits the text color from the parent element */
+    margin-top: 0.5rem; /* Adjust the margin to position the link right below the h3 */
+    text-underline-offset: 4px; /* Increase this value to set the gap between the text and the underline */
+
+    /* Add other styles if necessary */
+  }
+  
+  .heading-link:hover,
+.heading-link:focus {
+  text-decoration-color: #333333;
+}
+
+/* When hovering over the entire heading block, change the link color */
+.heading-block:hover .heading-link,
+.heading-block:focus .heading-link {
+    text-decoration-color: #333333; /* Change to the desired color on hover */
+}
+
+/* New class for the Link wrapper */
+.heading-block-link {
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits the color from the parent */
+  cursor: pointer; /* Hand icon on hover */
+}

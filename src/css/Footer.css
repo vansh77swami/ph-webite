@@ -1,0 +1,220 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+.footer {
+  /* background-color: #000000; Set the background color to black */
+  /* color: white; Set text color to white */
+  padding-bottom: 3rem;
+  text-align: left; /* Align text to the left for the entire footer */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align children to the start of the flex container (left side) */
+  width: 100%;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column; /* Stack the links vertically */
+  padding: 0 2rem; /* Padding on the sides */
+  margin-top: -2.3rem; /* Decrease this value as needed to move content up */
+  margin-left: 6.65rem; /* Adjust margin-left to align with the social-links-nav */
+  align-items: flex-start; /* Align the navigation items to the start (left) */
+}
+
+.footer-nav .footer-link {
+  text-decoration: none;
+  /* color: white; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: inline-block; /* Confirms that it's an inline-block element */
+}
+
+
+
+.footer-nav .footer-link:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block; /* If previously set to flex, change it to block */
+}
+
+.footer-nav li {
+  display: block; /* If previously set to flex, change it to block */
+}
+
+
+.footer p {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+  font-size: 1rem;
+  /* color: white; */
+  line-height: 1.5;
+  margin-top: 0.5rem; /* Decrease the margin-top to move the copyright text up */
+  /* Remove margin-left if you want the text to align with the other footer content */
+}
+
+
+
+/* Style added for the copyright symbol span */
+.footer p span {
+  font-weight: 400; /* Set a normal font weight for © */
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1rem; /* Match the link item font size */
+
+}
+
+/* Styles for the social links navigation bar */
+.social-links-nav {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center all items horizontally within the container */
+  align-items: center; /* Vertically center items within the container */
+  padding: 0.5rem 0; /* Padding top and bottom */
+  width: 100%; /* Match the width of section top border */
+/* margin-top: 1.6rem; */
+margin-left: 30rem;
+}
+
+/* Styles for individual social links */
+.social-link {
+  text-decoration: none;
+  /* color: white; */
+  font-family: 'Open Sans', sans-serif; /* Match the font-family of footer-link */
+  font-weight: 500; /* Match the font-weight of footer-link */
+  font-size: 1rem; /* Match the font-size of footer-link */
+  line-height: 1.5; /* Match the line-height of footer-link */
+  display: inline-block; /* This makes the link's clickable area only as wide as its content */
+  margin: 0 1rem; /* Horizontal margin between links */
+  text-align: left;
+
+}
+
+.social-link:hover {
+  text-decoration: underline; /* Underline on hover to match footer-link */
+}
+
+.back-to-top {
+  /* color: white; Text color */
+  font-family: 'Open Sans', sans-serif; /* Same font family as footer-link */
+  font-weight: 500; /* Same font weight as footer-link */
+  font-size: 1rem; /* Same font size as footer-link */
+  line-height: 1.5; /* Same line height as footer-link */
+  text-decoration: none; /* No underline */
+  background: none; /* No background color */
+  border: none; /* No border */
+  cursor: pointer; /* Hand pointer icon on hover */
+  display: inline-block; /* Inline block to restrict size to content */
+  padding: 0.25rem 0; /* Padding to match footer-link */
+  margin-bottom: 1rem;
+  /* Center the button */
+  margin-left: 47.3rem;
+  margin-right: auto;  
+  margin-top: -2rem;
+  
+}
+
+/* Hover state for back-to-top button */
+.back-to-top:hover {
+  text-decoration: underline; /* Underline on hover, like footer-link */
+}
+
+.back-to-top:focus {
+  /* Replace 'outline: none;' with a custom style for accessibility */
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Example focus style */
+}
+
+/* Style for the SVG icon within the back-to-top button */
+.arrow-up-icon {
+  /* SVG icon size may need to be similar to any icons used in the footer-links */
+  width: 1em;
+  height: 1em;
+  /* Position the icon with text */
+  align-items: center; /* Vertically center items within the container */
+  vertical-align: -0.125em; /* Adjust vertical alignment as needed */
+}
+
+.footer-content {
+  /* This new class targets the wrapped content excluding the top border */
+  display: flex;
+  flex-direction: column; /* Start with column layout for stacking */
+  align-items: flex-start; /* Align children to the start of the flex container (left side) */
+}
+
+/* Media query for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+
+  .footer-content {
+    display: flex;
+    flex-direction: row; /* Use row to align children horizontally */
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .social-links-nav {
+    order: 2;
+  }
+
+  .footer-nav {
+    order: 1;
+  }
+
+  .footer-nav,
+  .social-links-nav {
+    /* width: 100%; Ensure full-width for better control */
+    text-align: left; /* Center align the content */
+  }
+
+  .footer-nav {
+    margin-top: 1rem;
+    line-height: 50%;
+    letter-spacing: 0;
+    flex: 2; /* Give footer-nav more space */
+    margin-top: 0; /* Set margin as needed */
+    margin-left: 0;
+    padding-left: 1rem; /* Set padding as needed */
+    font-size: 1rem; /* Keep font size consistent */
+    text-align: left; /* Align the text to the left */
+    white-space: nowrap; /* Ensure text stays in single line */
+    margin-bottom: 0rem;  
+    margin-right: 0rem;
+}
+
+.social-links-nav {
+  flex: 2; /* Assign less space to social-links-nav */
+  order: 2;
+  text-align: left;
+  flex-direction: column; /* Stack the links vertically */
+  margin-top: 0.5rem; /* Adjust top margin if necessary */
+  padding-left: 1rem; /* Make sure there is no padding on the left */
+  padding-top: 1.5rem;
+  padding-bottom: 0rem;
+  line-height: 50%;
+    letter-spacing: 0;
+    font-size: 1rem; /* Keep font size consistent */
+    white-space: nowrap; /* Ensure text stays in single line */
+    margin-left: 0rem;
+}
+
+.social-link {
+  display: block; /* Display each link as a block for full width */
+  text-align: left; /* Align text of each link to the left */
+  padding-left: 0rem; /* Ensure there is no padding on the left */
+  margin-left: 0rem; /* Ensure there is no margin on the left */
+}
+
+  .back-to-top {
+    margin-left: 1rem; /* Center the button */
+    margin-right: auto;
+    text-align: left; /* Center the text and icon inside the button */
+    padding: 0rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    padding-right: 0rem;
+  }
+
+}

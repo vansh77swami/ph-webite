@@ -1,0 +1,103 @@
+
+/* Style for the main about wrapper */
+.about-main {
+  margin: 0;
+  padding: 0; /* No padding to ensure section stretches the full width */
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Apply flex container to the main */
+  flex-direction: column; /* Align children in a column for vertical stacking */
+  align-items: flex-start; /* Align content to the left instead of centering horizontally */
+  height: 688px;
+  background-color: #ffffff;
+}
+
+/* Style for the introductory section of the About page */
+.about-intro {
+  background-color: #ffffff;
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Use flexbox for horizontal alignment */
+  flex-direction: row; /* Align children in a row */
+  align-items: flex-start; /* Align content to the top */
+  justify-content: flex-start; /* Align content to the left */
+  padding: 12rem 8.5rem 0; /* Increase top padding to move content down */
+  border-radius: 1; /* Full bleed to the edges */
+  margin-right: 0rem;
+
+}
+
+
+/* Styles for the heading within the .about-intro */
+.about-intro h1 {
+  font-size: 4.6em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #1f2937;
+  flex: 1; /* Flex property to control width */
+  margin: 0;
+  padding-right: 1rem; /* Add some spacing between the heading and the paragraph */
+  margin-top: 4rem; /* Add this line to set the top margin to 0 */
+  margin-left: 6rem;
+  font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* Styles for the multiline paragraph within the .about-intro */
+.about-intro p {
+  color: #1f2937;
+  font-size: 1.7rem;
+  line-height: 150%;
+  letter-spacing: .01em;
+  font-family: "FK Grotesk Light", sans-serif;
+  flex: 1; /* Flex property to control width */
+  margin: 0;
+  text-align: left; /* Align text to the left side */
+  margin-top: 1rem; /* Add this line to set the top margin to 0 */
+  margin-right: 5rem;
+  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+/* Responsive Styles for screens with a width of 768px or less */
+@media screen and (max-width: 768px) {
+
+  /* Adjust the .about-intro flex-direction to stack children vertically */
+  .about-intro {
+    flex-direction: column; /* Stack items in a column */
+    align-items: flex-start; /* Align items to the start (left) on the cross-axis */
+    justify-content: flex-start; /* Align content to the top */
+    padding: 6rem 2.5rem 0; /* Adjust padding for smaller screens */
+    padding-left: 1rem;
+    margin-left: 0rem;
+    padding-right: 1rem;
+  }
+
+  /* Adjust the heading style for a more suitable size and left alignment */
+  .about-intro h1 {
+    font-size: 2.625rem;
+    line-height: 110%;
+    letter-spacing: -.01em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-align: left; /* Align heading text to the left */
+    margin-left: 0rem;
+    margin-right: 0; 
+    margin-top: 3rem;
+    padding-right: 0; 
+    padding-left: 0rem;
+  }
+
+  /* Adjust the paragraph style for better readability and left alignment */
+  .about-intro p {
+    font-size: 1.3125rem;
+    line-height: 130%;
+    letter-spacing: -.01em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 1rem; 
+    margin-right: 0; 
+    text-align: left; /* Align paragraph text to the left */
+    padding-left: 0rem;
+  }
+}

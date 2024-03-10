@@ -1,0 +1,214 @@
+/* HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.home-page .video-section {
+  position: relative;
+  height: 93.5vh;
+  width: 100%;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 93.5vh;
+  z-index: 1; /* Below overlay content */
+  overflow: hidden;
+}
+
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 80%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Above the video background */
+  color: white;
+  text-align: left;
+}
+
+.overlay-text h1 {
+  font-size: 4.4em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+
+}
+
+.action-button {
+  display: block;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.link-style {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em;
+  border: 1.4px solid #fff;
+  font-size: 1em;
+  line-height: 1.2;
+  border-radius: 0.2em;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.link-style:hover,
+.link-style:focus {
+  background-color: #fff;
+  color: #000000;
+  text-decoration: none;
+}
+
+.link-style .nav-icon {
+  margin-left: 0.2rem;
+  width: 1em;
+  height: 1em;
+}
+
+.headings-section {
+  padding: 2rem;
+  background-color: #ffffff; /* Solid background color for the content */
+}
+
+.f-heading-3 {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Add to HomePage.css or create MainContent.css */
+.headings-container {
+  display: flex;
+  justify-content: flex-start; /* This will spread out your heading blocks equally */
+  padding: 4rem; /* Can adjust the padding to your preference */
+  background-color: #000000; /* Solid background color for the content */
+  color: #ffffff; /* Set text color to white */
+  padding-left: 7.7rem; /* Add 1rem padding to the left */
+
+}
+
+/* Styles for screens 768px and smaller */
+
+@media (max-width: 768px) {
+.video-section {
+    height: 50vh; /* Adjust the height as needed for smaller screens */
+  }
+
+
+
+ /* Adjust the position and padding of the overlay text container */
+.overlay-text {
+  position: absolute;
+  top: 84.5%; /* Adjust the position to fit better on smaller screens */
+  left: 0; /* Align to the left edge */
+  /* transform: translate(-50%, -50%); We remove the horizontal part of the transform */
+  transform: translateY(-50%); /* Keep the vertical centering */
+  width: 100%; /* Make overlay text span the full width */
+  padding: 0 20px; /* Add padding to prevent text from touching the edges */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  margin-left: -4px; /* Offset left margin by the same amount as the padding */
+
+}
+
+/* Ensure h1 occupies the full width of its parent and is centered */
+.overlay-text h1 {
+  font-size: 2.525rem;
+  width: calc(100% - 40px); /* Adjust width considering the padding */
+  text-align: left;
+}
+
+/* Adjust the sizes of other elements like buttons as needed */
+.link-style {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0.5em 1em; */
+  border: 1.4px solid #fff;
+  font-size: 1em;
+  line-height: 0.8;
+  border-radius: 0.2em;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  /* margin-top: 2rem; */
+  padding-left: 0.7rem;
+  padding-right: 0.75rem;
+}
+
+}
+
+/* Add responsive styles for the main content when the viewport width is 768px or less */
+@media (max-width: 768px) {
+
+  /* Style adjustments for the main content container */
+  .home-page .headings-container {
+      flex-direction: column; /* Stack the heading blocks on top of each other */
+      padding: 3rem 1.5rem; /* Adjust overall padding */
+      padding-left: 1rem; /* Adjust left padding to be smaller */
+      align-items: left; /* Center the heading blocks */
+      margin-right: 0; /* Remove the margin on the right */
+      padding-right: 1rem; /* Reset any left padding to 0 */
+
+  }
+  
+  /* Style adjustments for individual heading blocks */
+  .home-page .heading-block {
+      margin-right: 0; /* Remove the margin on the right */
+      margin-bottom: 2rem; /* Add space between stacked blocks */
+      max-width: 100%; /* Allow the block to fill the container */
+      padding: 0 1rem; /* Adjust padding for mobile */
+      text-align: left; /* Center the text */
+      margin-left: 0; /* Reset any left margin to 0 */
+      padding-left: 0; /* Reset any left padding to 0 */
+      padding-right: 0rem;
+
+  }
+
+  /* Adjust the font size for smaller screens within heading blocks */
+  .home-page .heading-block h3 {
+      font-size: 1.3125rem; /* Reduce the font size */
+      margin-left: 0; /* Reset any left margin to 0 */
+      padding-left: 0; /* Reset any left padding to 0 */
+      font-weight: 500;
+      margin-right: 0; /* Reset any left margin to 0 */
+      padding-right: 0; /* Reset any left padding to 0 */
+  }
+
+  /* Style adjustments for the links inside heading blocks */
+  .home-page .heading-link {
+    display: block; /* This will allow it to take the full width of its parent */
+        margin-left: 0; /* Reset any left margin to 0 */
+        padding-left: 0; /* Reset any left padding to 0 */
+      text-align: left; /* Center the link text */
+      margin-top: 0.75rem; /* Adjust spacing above the link */
+  }
+
+
+}

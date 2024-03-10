@@ -1,0 +1,107 @@
+/* MidproductSection.css */
+.mid-product-section {
+    padding: 4rem 8.5rem;
+    background-color: white;
+    position: relative;
+}
+
+.section-top-mid-product-border {
+    height: 1px;
+    background-color: #000000;
+    width: 85.2%;
+    position: absolute;
+    top: 0;
+    margin-top: 6rem;
+}
+
+.mid-product-heading {
+    font-family: 'Merriweather', serif;
+    font-size: 2.70rem;
+    font-weight: 300;
+    line-height: 110%;
+    letter-spacing: -.01em;
+    text-align: left;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.mid-product-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.section-bottom-mid-product-border {
+    height: 1px;
+    background-color: #CCCCCC;
+    width: 100.4%;
+}
+.section-bottom-mid-second-product-border {
+    margin-top: 10rem;
+    height: 1px;
+    background-color: #CCCCCC;
+    width: 100.4%;
+}
+
+.section-bottom-end-product-border {
+    margin-top: 10rem;
+    height: 1px;
+    background-color: #000000;
+    width: 100.4%;
+    margin-bottom: -3.05rem;
+}
+
+/* Media Query for screens at 768 pixels wide and below */
+@media (max-width: 768px) {
+    .mid-product-section {
+    padding-left: 0rem; 
+    padding-right: 0rem;  
+    margin-left: 0rem;
+    padding-top: 0rem;
+    width: auto;
+    }
+    
+    .section-top-mid-product-border {
+        margin-top: 4rem;
+        height: 1px;
+        /* background-color: #ffffff; */
+        width: 100%;
+        margin-left: 1rem;
+        margin-right: 0rem;
+    }
+
+    /* Adjust the width of the borders to fit smaller screen sizes */
+    .section-bottom-mid-product-border,
+    .section-bottom-mid-second-product-border,
+    .section-bottom-end-product-border {
+        width: 100%; /* Borders now extend to the full width of their container */
+        margin-top: 4rem;
+    }
+  
+    /* Adjusting font size and margins for the heading */
+    .mid-product-heading {
+        margin-top: 4rem; /* Reducing the margin from the top */
+        padding-bottom: 2rem; /* Reduced padding-bottom */
+        text-align: left;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        font-size: 1.75rem;
+        margin-left: 0rem;
+        width: auto;
+    }
+  
+    /* Adjust content container layout for smaller screen */
+    .mid-product-header-container {
+        align-items: left; /* Center alignment might look better on smaller screens */
+        padding-left: 1rem;
+        width: auto;
+    }
+  
+    /* Specific adjustments for components if necessary */
+    /* .GPTPart, .ArtfulPart, .GemPart {
+        Adjust styles for each part as needed for smaller screens, e.g., flex-direction, margins, font sizes, etc.
+    } */
+  
+    /* Any additional adjustments for inner elements, such as images, buttons, texts etc. */
+  }

@@ -1,0 +1,206 @@
+/* GPTPart.css */
+
+.horizontal-layout-subheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+  
+.horizontal-layout-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mid-product-subheading {
+    margin-top: 0.5rem;
+    font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+    margin-right: 0;
+    letter-spacing: -.01em;
+    font-size: 1.8rem;
+    line-height: 120%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+}
+
+.mid-product-description {
+    font-size: 1.1rem;
+    line-height: 130%;
+    text-align: left;
+    margin-left: 50.3rem;
+    font-weight: 500;
+    margin-top: -1.5rem;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.section-bottom-new-border {
+    height: 1px;
+    background-color: #CCCCCC;
+    width: 100.4%;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.horizontal-text-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.text-item {
+    position: relative;
+    z-index: 2;
+    margin-right: 1rem;
+    padding-top: 0rem;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    outline: inherit;
+    font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #a5a5a5;
+}
+
+/* Start media query for screens that are 768px wide or smaller */
+@media (max-width: 768px) {
+  
+    .horizontal-layout-subheading,
+    .horizontal-layout-description {
+        /* Stack the layout instead of side-by-side for smaller screens */
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .mid-product-subheading {
+        /* Adjust the font size and margins for smaller screens */
+        margin-top: 1rem;
+        margin-right: 0;
+        font-size: 1.3125rem;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0;
+        padding-right: 0rem;
+    }
+    
+    .mid-product-description {
+        /* Adjust the font size, line height, and margins for smaller screens */
+        font-size: 1rem;
+        line-height: 130%;
+        letter-spacing: 0;
+        text-align: justify;
+        margin: 1rem 0; /* Remove the large left margin and reduce top margin */
+    }
+    
+    .horizontal-text-bar {
+        /* Adjust the layout for a possibly multiline navigation bar */
+       flex-direction: row;
+    }
+    
+    .text-item {
+        position: relative;
+        z-index: 2;
+        margin-right: 1rem;
+        padding-top: 0rem;
+        text-decoration: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: inherit;
+        font: inherit;
+        outline: inherit;
+        font-family: "Soehne", system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: #a5a5a5;        margin: 0.5rem; /* Give some space around each button */
+        font-size: 1rem;
+        line-height: 130%;
+        letter-spacing: 0;
+    
+    }
+  
+     /* Keep the horizontal-text-bar items in a row and allow them to scroll horizontally if they overflow */
+     .horizontal-text-bar {
+        margin-top: 2rem; /* Adjust the top margin as needed */
+        overflow-x: auto; /* Allows horizontal scrolling */
+        white-space: nowrap; /* Ensures the buttons do not wrap */
+        padding-top: 0rem;
+        margin-top: 0rem;
+    }
+
+    /* Modify text-item active state for visibility */
+    .text-item.active {
+        color: black;
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-decoration-thickness: 1px;
+        text-decoration-style: solid;
+        text-underline-offset: 0.75rem;
+        font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: 0;
+    }
+    /* Scale down margin-top of .section-bottom-new-border */
+    .section-bottom-new-border {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+    /* Adjust the CSS for InputOutput component, if needed, based on your existing styles */
+    .content-gif-horizontal-layout {
+        flex-direction: column; /* Stack content instead of side-by-side layout */
+    }
+
+    /* Style the images within cards to be responsive */
+    .artful-product-image {
+        height: auto; /* Adjust the height to maintain aspect ratio */
+    }
+
+    /* Adapt the configuration and layout of product cards */
+    .artful-product-cards-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center-align the cards */
+        gap: 1rem; /* Adjust gap between cards */
+    }
+    
+    
+
+
+    /* Ensure text within InputOutput component stacks correctly */
+    .input-container, .output-container {
+        /* padding-top: .5rem; */
+        /* padding-bottom: 2rem; */
+        padding-left: 0rem;
+        padding-right: 1rem;
+        }
+
+    .new-paragraph-and-try-now {
+     /* padding-left: 1rem; */
+     text-align: left;
+     margin-left: 0rem;
+    }
+
+    .input-text {
+    padding-bottom: 0.5rem;
+    }
+
+
+    /* Styles for each individual product card */
+.artful-product-card {
+  
+    margin-top: 0.5rem;
+
+  }
+
+
+  }
