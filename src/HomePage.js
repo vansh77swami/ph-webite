@@ -6,7 +6,7 @@ import ProductSection from './ProductSection'; // Import the new ProductSection 
 import ReviewSection from './ReviewSection'; // Ensure you have created and imported ReviewSection
 
 
-const videoSrc = 'https://raw.githubusercontent.com/vansh77swami/video-hosting/main/ph_vid.mp4';
+const videoSrc = 'https://res.cloudinary.com/dyt3ti6xq/video/upload/v1710059076/ekszq09cfdnyzwgb2ywq.mp4';
 
 const HomePage = () => (
   <div className="home-page">
