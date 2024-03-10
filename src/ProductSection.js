@@ -50,7 +50,7 @@ const ProductSection = () => (
     <ProductCard 
       productName="Artful - AI Art Generator"
       launchDate="Jan 3, 2024"
-      imageUrl="https://i.ibb.co/f8970sy/artful-img.webp" // Replace with actual image path
+      imageUrl="https://i.ibb.co/2hGRQts/a7rxsdyqqjvuqpewnyrj-2-2.jpg" // Replace with actual image path
       linkTo="/products#artful" // This hash link will scroll to the "artful-part" section
       />
 
@@ -58,7 +58,7 @@ const ProductSection = () => (
     <ProductCard 
       productName="Gem AI - Gemini AI Chatbot"
       launchDate="Launch Date"
-      imageUrl="https://i.ibb.co/2hGRQts/a7rxsdyqqjvuqpewnyrj-2-2.jpg" // Replace with actual image path
+      imageUrl="https://i.ibb.co/f8970sy/artful-img.webp" // Replace with actual image path
       linkTo="/products#gem" // This hash link will scroll to the "gem-part" section
       />
       
