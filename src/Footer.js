@@ -8,7 +8,7 @@ const socialLinks = [
   { name: 'Discord', url: 'https://discord.gg/AB9VKpR8PZ' },
   { name: 'YouTube', url: 'https://youtube.com/@ProjectHit-mx4pq?si=RnXa3Dxc6970Y3x3' },
   { name: 'Telegram', url: 'https://t.me/+RpNznNcnKLI3YjY1' },
-  { name: 'LinkedIn', url: '/linkedin' }
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/company/project-hit' }
   // You can replace the hrefs with the actual URLs to the social media profiles
 ];
 
