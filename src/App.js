@@ -7,6 +7,7 @@ import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import PrivacyPolicyPage from './PrivacyPolicyPage';
 import TermsofServicePage from './termsofservice';
+import RedirectToAppAdsTxt from './RedirectToAppAdsTxt';
 
 import ContactPage from './ContactPage';
 import ProductPage from './ProductPage';
@@ -118,6 +119,7 @@ switch (location.pathname) {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/products" element={<ProductPage />} />
           <Route path="/terms-of-service" element={<TermsofServicePage />} />
+          <Route path="/app-ads.txt" element={<RedirectToAppAdsTxt />} />
         </Routes>
       </main>
       <Footer bgColor={footerBgColor} textColor={footerTextColor} />
