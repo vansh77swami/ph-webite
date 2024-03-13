@@ -105,6 +105,17 @@
     animation: move 200s ease-in-out infinite; /* Updates to the new animation values */
 }
 
+  .review-description {
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    text-align: left;
+    margin-top: -4rem;
+    margin-right: 1rem;
+    margin-left: 60rem;
+
+    /* Include any shared styles for both paragraphs here */
+  }
+
 /* Animation keyframes for the smooth leftward scroll */
 @keyframes move {
     0% {
