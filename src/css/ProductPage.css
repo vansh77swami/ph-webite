@@ -4,7 +4,7 @@
   .productPage-main {
     margin: 0;
     padding: 0; /* No padding to ensure section stretches the full width */
-    width: 100vw; /* Full viewport width */
+    /* width: 100vw; Full viewport width */
     min-height: 100vh; /* Full viewport height */
     display: flex; /* Apply flex container to the main */
     flex-direction: column; /* Align children in a column for vertical stacking */
