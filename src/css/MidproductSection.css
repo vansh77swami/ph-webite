@@ -9,9 +9,9 @@
     height: 1px;
     background-color: #000000;
     width: 85.2%;
-    position: absolute;
+    position: relative;
     top: 0;
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 .mid-product-heading {
@@ -60,6 +60,8 @@
     margin-left: 0rem;
     padding-top: 0rem;
     width: auto;
+    margin: 0;
+    padding: 0; /* No padding to ensure section stretches the full width */
     }
     
     .section-top-mid-product-border {
@@ -76,7 +78,7 @@
     .section-bottom-mid-second-product-border,
     .section-bottom-end-product-border {
         width: 100%; /* Borders now extend to the full width of their container */
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
   
     /* Adjusting font size and margins for the heading */
