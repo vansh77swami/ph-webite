@@ -98,7 +98,7 @@
     margin-top: 2.5rem;
     margin-left: 21rem;
     width: 800px;
-
+margin-bottom: 2rem;
   }
   
   .input-container {
@@ -234,6 +234,7 @@
         width: 100%; /* Full width for smaller screens */
         margin-left: 10rem;
         margin-top: 1.5rem; /* Adjust the top margin as needed */
+        margin-bottom: 3rem;
       }
     
       /* Adjust the text content container for smaller screens */
@@ -292,8 +293,7 @@
       
       .active-output-img {
         /* max-width: 100%; This will ensure the image does not exceed the parent container's width */
-        width: 10%; /* This will make the image responsive */
-        height: 10%; /* Maintain aspect ratio */
+
         margin-top: 0.7rem; /* Adjust as necessary */
         margin-bottom: 1rem; /* Adjust as necessary */
       }
