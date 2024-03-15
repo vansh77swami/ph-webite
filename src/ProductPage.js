@@ -5,7 +5,7 @@ import MidproductSection from './MidproductSection';
 import './css/MidproductSection.css';
 
 const ProductPage = () => (
-  <main className="productPage-main">
+  <>
     <section className="productPage-intro">
       <h1>Innovating concepts and ideas with AI</h1>
       <p>
@@ -14,7 +14,7 @@ const ProductPage = () => (
     </section>
    
     <MidproductSection />
-  </main>
+  </>
 );
 
 export default ProductPage;
