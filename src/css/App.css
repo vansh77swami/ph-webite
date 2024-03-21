@@ -25,5 +25,5 @@ body {
 main {
   flex: 1; /* Grow to take up all available space between the header and footer */
   padding-top: 4rem;
-  /* Add padding, margin, or other styles as needed */
+overflow: hidden;
 }
