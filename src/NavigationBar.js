@@ -87,7 +87,7 @@ function NavigationBar({ color, textColor, hoverColor, hoverTextColor, navColor}
         </ul>
         <div className="nav-button-container-mobile">
       <a 
-          href="https://play.google.com/store/apps/details?id=com.projecthit.artful"
+          href="https://play.google.com/store/apps/details?id=com.projecthit.gptai"
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Try Artful"
@@ -105,7 +105,7 @@ function NavigationBar({ color, textColor, hoverColor, hoverTextColor, navColor}
       
       <div className="nav-button-container">
         <a 
-          href="https://play.google.com/store/apps/details?id=com.projecthit.artful"
+          href="https://play.google.com/store/apps/details?id=com.projecthit.gptai"
           target="_blank" 
           rel="noopener noreferrer"
           aria-label="Try Artful"
