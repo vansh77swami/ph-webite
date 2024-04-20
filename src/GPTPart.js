@@ -33,7 +33,7 @@ const GPTPart = ({ setActiveContent, activeContent, setActiveMedia, activeMedia 
   return (
     <>
     <div id="gpt-part" className="horizontal-layout-subheading"> {/* Added an id here */}
-        <h2 className="mid-product-subheading">GPT</h2>
+        <h2 className="mid-product-subheading">GPT AI</h2>
       </div>
       <div className="horizontal-layout-description">
         <div className="mid-product-description-wrapper">
