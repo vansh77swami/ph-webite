@@ -52,7 +52,7 @@ export const content = {
               </p>
             </div>
             <div id="gpt" className="try-now-container-gpt">
-              <a href="https://play.google.com/store/apps/details?id=com.projecthit.artful" 
+              <a href="https://play.google.com/store/apps/details?id=com.projecthit.gptai" 
                  className="try-now-button" 
                  target="_blank" 
                  rel="noopener noreferrer">
