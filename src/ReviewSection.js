@@ -45,7 +45,7 @@ const ReviewCard = ({ reviewText, reviewerName, reviewerImageUrl }) => (
     {
         reviewText: "This is wonderful app. I never thought it would be easy going into my life. Good and happy. I do not know how to use it yet. Learning.",
         reviewerName: "Krishna Gopal",
-        reviewerImageUrl: "https://media.licdn.com/dms/image/D4D03AQFnbtLU_ZNwEA/profile-displayphoto-shrink_100_100/0/1703839081446?e=1713398400&v=beta&t=ArFPckkzOftsooJpooAGRJtyTLTeVd9exavSqOzirDY",
+        reviewerImageUrl: "https://i.ibb.co/WcfQ9XS/krishna-gopal.jpg",
       },
       {
         reviewText: "If this goes on like this in the future, it has a chance to become one of the best apps you can download if you want an answer to your questions.",
