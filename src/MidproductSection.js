@@ -54,16 +54,15 @@ const [gemActiveMedia, setGemActiveMedia] = useState(null);
               activeInputOutput={activeInputOutput} // add this line
               setActiveInputOutput={setActiveInputOutput} // and this line
             />
-              <div id="gem" className="section-bottom-mid-second-product-border"></div>
+              {/* <div id="gem" className="section-bottom-mid-second-product-border"></div>
       
-      {/* Update the GemPart component to receive its own state and state setters */}
       <GemPart 
         setActiveContent={setGemActiveContent} 
         activeContent={gemActiveContent}
         setActiveMedia={setGemActiveMedia}
         activeMedia={gemActiveMedia}
         Gempartcontent={Gempartcontent}
-      />
+      /> */}
                 
 
       <div className="section-bottom-mid-second-product-border"></div>
