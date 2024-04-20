@@ -25,28 +25,33 @@ export const artfulContent = {
     data: [
       {
         modelName: "Stable Diffusion XL",
-        modelDescription: "The next phase of the core diffusion model. Stunning outputs, even with short prompts.",
+        modelDescription: "It is great at a range of different styles. It is known for its smoothness.",
         imageUrl: "https://i.ibb.co/4NDTLZy/artful-astronaut-1.webp"
+      },
+      {
+        modelName: "Dalle Creative",
+        modelDescription: "The next phase of the core Dalle model. Stunning outputs, even with short prompts.",
+        imageUrl: "https://i.ibb.co/xhr8m5y/dalle-3-creative.jpg"
+      },
+      {
+        modelName: "Anime Dream",
+        modelDescription: "A new high-speed Anime-focused model that excels at a range of anime, illustrative, and CG styles.",
+        imageUrl: "https://i.ibb.co/y4c48Jt/anime-dream.jpg"
       },
       {
         modelName: "Dalle 3",
         modelDescription: "A standout model known for its versatility and exceptionally accurate image outputs. By OpenAI.",
-        imageUrl: "https://i.ibb.co/2d7V4j3/dalle-3.png"
+        imageUrl: "https://i.ibb.co/2W6n2VB/dalle3-model.jpg"
+      },
+      {
+        modelName: "Epic Realism",
+        modelDescription: "Epic Realism generates ultra realistic images equivalent of real world camera images.",
+        imageUrl: "https://i.ibb.co/8BhpytW/epic-realism.jpg"
       },
       {
         modelName: "Kandinsky 3",
         modelDescription: "A versatile model that excels at realism and higher quality outputs.",
-        imageUrl: "https://i.ibb.co/F0tm1BZ/kandinsky-3.png"
-      },
-      {
-        modelName: "Juggernaut XL",
-        modelDescription: "Juggernaut XL generates ultra realistic images equivalent of real world camera images.",
-        imageUrl: "https://i.ibb.co/mH4J2Rc/juggernaut-XL.png"
-      },
-      {
-        modelName: "Kandinsky 2.2",
-        modelDescription: "This model excels at creating realistic images, capturing fine details, and depicting wide scenes.",
-        imageUrl: "https://i.ibb.co/HVmzQfv/kandinsky-2.png"
+        imageUrl: "https://i.ibb.co/Fnz8Gk8/kandinsky-3.jpg"
       },
       // You can continue to add more models following the same object structure.
     ]
